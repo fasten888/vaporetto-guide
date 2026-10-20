@@ -29,6 +29,7 @@ DIST = ROOT / "dist"
 SITE_NAME = "Vaporetto Guide"
 SITE_URL = os.environ.get("SITE_URL", "https://fasten888.github.io").rstrip("/")
 BASE_PATH = os.environ.get("BASE_PATH", "/vaporetto-guide").rstrip("/")
+CUSTOM_DOMAIN = os.environ.get("CUSTOM_DOMAIN", "").strip()
 SITE = f"{SITE_URL}{BASE_PATH}"
 
 CONTACT_URL = "https://github.com/fasten888/vaporetto-guide/issues"
@@ -484,6 +485,8 @@ def main() -> None:
         encoding="utf-8",
     )
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
+    if CUSTOM_DOMAIN:
+        (DIST / "CNAME").write_text(CUSTOM_DOMAIN + "\n", encoding="utf-8")
     (DIST / "_headers").write_text(
         "/*\n"
         "  X-Content-Type-Options: nosniff\n"

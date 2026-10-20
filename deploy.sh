@@ -7,13 +7,15 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-SITE_URL="${1:-https://fasten888.github.io}"
+SITE_URL="${1:-https://vaporettoguide.com}"
 SITE_URL="${SITE_URL%/}"
 
 if [ "$SITE_URL" = "https://fasten888.github.io" ]; then
   export BASE_PATH="/vaporetto-guide"
+  export CUSTOM_DOMAIN=""
 else
   export BASE_PATH=""
+  export CUSTOM_DOMAIN="${SITE_URL#https://}"
 fi
 export SITE_URL
 
