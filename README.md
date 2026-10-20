@@ -5,8 +5,9 @@ the boats, the fares and the routines. The homepage targets the query
 “vaporetto meaning”; the supporting pages cover the adjacent intents (what it is,
 pronunciation, etymology, riding, tickets, gondola comparison).
 
-Live: <https://fasten888.github.io/vaporetto-guide/> (GitHub Pages project site).
-Planned canonical domain: `vaporettoguide.com` — see [DEPLOY.md](DEPLOY.md).
+Live: <https://vaporettoguide.com/> (GitHub Pages, custom domain).
+Transitional URL: <https://fasten888.github.io/vaporetto-guide/>.
+See [DEPLOY.md](DEPLOY.md) for DNS and Search Console steps.
 
 ## Stack
 

@@ -2,28 +2,32 @@
 
 ## 0. 当前状态
 
-- 线上地址：`https://fasten888.github.io/vaporetto-guide/`（GitHub Pages 项目站，HTTPS）
-- 目标正式域名：`vaporettoguide.com`
-- 站点根路径：现在是 `/vaporetto-guide`，换上正式域名后是 `/`
-- 已核实（Verisign RDAP，2026-10-20）：`vaporettoguide.com` **可注册**；
-  `vaporettomeaning.com` 已被注册（Cloudflare NS），不要用精确匹配域名。
+- 正式域名：`vaporettoguide.com`（2026-10-20 已在 Spaceship 购买，含隐私保护）
+- 线上地址：`https://vaporettoguide.com/`（DNS 生效并绑定 Pages 后）
+- 过渡地址：`https://fasten888.github.io/vaporetto-guide/`
+- 站点根路径：正式域名下是 `/`，过渡地址下是 `/vaporetto-guide`
+- `vaporettomeaning.com` 已被注册（Cloudflare NS），不要用精确匹配域名
 
 > 注意：`BASE_PATH` 决定所有站内链接、canonical 和资源路径。换域名时必须把
 > `BASE_PATH` 改成空字符串重新构建，否则整站 404。
 
 ---
 
-## 1. 买域名（约 10 分钟，约 $11/年）
+## 1. 域名（已完成）
 
-推荐 **Cloudflare Registrar**（成本价、免费 WHOIS 隐私、DNS 直接托管）：
+`vaporettoguide.com` 已在 Spaceship 购买。DNS 仍由 Spaceship 的
+`launch1/launch2.spaceship.net` 托管，需要把 parking 记录换成 GitHub Pages 记录：
 
-1. 登录 https://dash.cloudflare.com → **Domain Registration → Register Domains**
-2. 搜索 `vaporettoguide.com`，付款（.com 约 $10–11/年）
-3. 注册后域名会出现在 **Websites** 列表，DNS 由 Cloudflare 托管
-4. 顺手开启 **Email Routing**，把 `hello@vaporettoguide.com` 转到常用邮箱
-   （站点页脚目前用 GitHub Issue 作为联系方式，以后可换）
+| 类型 | 主机 | 值 |
+|---|---|---|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `fasten888.github.io` |
 
-备选（同样先查 RDAP）：`vaporetto.guide`、`thevaporetto.com`。
+删除原来的 parking A 记录（`54.149.79.189`、`34.216.117.25`），不要开 URL
+Forwarding。加完用 `dig +short A vaporettoguide.com` 确认返回四个 `185.199.*`。
 
 ---
 
@@ -80,17 +84,15 @@ GitHub 会在仓库根写入 `CNAME`，并自动申请证书。再添加 `www`�
 
 ### 3.3 用根路径重新构建
 
-修改两处：
+仓库的 `domain/vaporettoguide.com` 分支已经改好：
 
-1. `.github/workflows/deploy.yml`：
-   ```yaml
-   SITE_URL: https://vaporettoguide.com
-   BASE_PATH: ""
-   ```
-2. `deploy.sh` 的默认值（可选，方便本地构建）。
+- `.github/workflows/deploy.yml`：`SITE_URL=https://vaporettoguide.com`、`BASE_PATH=""`、
+  `CUSTOM_DOMAIN=vaporettoguide.com`
+- `build.py` 会在 `dist/CNAME` 写入 `vaporettoguide.com`
+- `deploy.sh` 默认按正式域名构建
 
-然后 push。构建产物里 canonical、OG、sitemap、站内链接都会变成
-`https://vaporettoguide.com/...`。
+DNS 生效后合并到 `main`，Actions 自动发布。构建产物里 canonical、OG、
+sitemap、站内链接都会变成 `https://vaporettoguide.com/...`。
 
 > 旧地址 `fasten888.github.io/vaporetto-guide/` 会失效。因为站点是新站、还没被
 > 收录，直接切换即可；如果已经有外链，可在旧仓库首页放一个提示页，或在
