@@ -53,6 +53,7 @@ PAGES: list[dict] = [
     },
     {
         "slug": "what-is-a-vaporetto",
+        "crumb": "What is a vaporetto?",
         "file": "what-is-a-vaporetto.html",
         "nav": "Water bus",
         "title": "What Is a Vaporetto? Venice's Water Bus, Explained",
@@ -66,6 +67,7 @@ PAGES: list[dict] = [
     },
     {
         "slug": "pronunciation",
+        "crumb": "Pronunciation",
         "file": "pronunciation.html",
         "nav": "Pronounce",
         "title": "How to Pronounce Vaporetto: IPA, Syllables, Audio Tips",
@@ -79,6 +81,7 @@ PAGES: list[dict] = [
     },
     {
         "slug": "etymology",
+        "crumb": "Etymology",
         "file": "etymology.html",
         "nav": "Origin",
         "title": "Vaporetto Etymology: Why It Means \u201cLittle Steamer\u201d",
@@ -92,6 +95,7 @@ PAGES: list[dict] = [
     },
     {
         "slug": "how-to-ride",
+        "crumb": "How to ride",
         "file": "how-to-ride.html",
         "nav": "Ride",
         "title": "How to Ride the Vaporetto in Venice: Step by Step",
@@ -105,12 +109,13 @@ PAGES: list[dict] = [
     },
     {
         "slug": "tickets-and-prices",
+        "crumb": "Tickets & prices",
         "file": "tickets-and-prices.html",
         "nav": "Tickets",
         "title": "Vaporetto Tickets & Prices 2026: What You'll Pay",
         "desc": (
-            "ACTV vaporetto fares for 2026: \u20ac9.50 single, \u20ac25 for 24 hours, \u20ac45 for 72 hours. "
-            "Pass maths, where to buy, validation rules and what is not included."
+            "ACTV vaporetto fares for 2026: \u20ac9.50 single, \u20ac25 for 24 hours, "
+            "\u20ac45 for 72 hours. Pass maths, where to buy and what is not included."
         ),
         "kind": "article",
         "priority": "0.9",
@@ -118,12 +123,13 @@ PAGES: list[dict] = [
     },
     {
         "slug": "vaporetto-vs-gondola",
+        "crumb": "Vaporetto vs gondola",
         "file": "vaporetto-vs-gondola.html",
         "nav": None,
         "title": "Vaporetto vs Gondola: Which Venice Boat Should You Take?",
         "desc": (
-            "A vaporetto is public transport; a gondola is a private ride. Compare cost, duration, "
-            "views and when each one is actually worth it \u2014 plus the \u20ac2 traghetto shortcut."
+            "A vaporetto is public transport; a gondola is a private ride. Compare cost, duration "
+            "and when each is worth it \u2014 plus the \u20ac2 traghetto shortcut."
         ),
         "kind": "article",
         "priority": "0.8",
@@ -131,6 +137,7 @@ PAGES: list[dict] = [
     },
     {
         "slug": "about",
+        "crumb": "About",
         "file": "about.html",
         "nav": None,
         "title": "About Vaporetto Guide",
@@ -144,6 +151,7 @@ PAGES: list[dict] = [
     },
     {
         "slug": "contact",
+        "crumb": "Contact",
         "file": "contact.html",
         "nav": None,
         "title": "Contact Vaporetto Guide",
@@ -154,6 +162,7 @@ PAGES: list[dict] = [
     },
     {
         "slug": "privacy",
+        "crumb": "Privacy",
         "file": "privacy.html",
         "nav": None,
         "title": "Privacy Policy",
@@ -237,7 +246,7 @@ def build_jsonld(page: dict, faqs: list[dict]) -> str:
 
     crumbs = [("Home", f"{SITE}/")]
     if slug:
-        crumbs.append((page["title"].split(":")[0], url))
+        crumbs.append((page["crumb"], url))
     graph.append(breadcrumb(crumbs))
 
     if page["kind"] == "home":
@@ -349,7 +358,7 @@ def build_nav(current: str) -> str:
 def build_crumbs(page: dict) -> str:
     if not page["slug"]:
         return ""
-    label = page["title"].split(":")[0]
+    label = page["crumb"]
     return (
         '<nav class="crumbs" aria-label="Breadcrumb">'
         '<a href="{{BASE}}/">Home</a><span aria-hidden="true">/</span>'
