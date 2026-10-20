@@ -133,6 +133,8 @@ curl -s  https://vaporettoguide.com/sitemap.xml | grep -c "<loc>"
    - `/pronunciation/`
    - `/etymology/`
    - `/what-is-a-vaporetto/`
+   - `/vaporetto-line-1/`
+   - `/vaporetto-from-marco-polo-airport/`
    - `/vaporetto-vs-gondola/`
 
 ### Bing Webmaster Tools
@@ -149,9 +151,9 @@ https://www.bing.com/webmasters → 从 GSC 导入 → 确认 sitemap。
 ## 5. 上线验收清单
 
 - [ ] 首页 200，英雄图、票价表、FAQ 正常
-- [ ] 7 个内容页 + about/contact/privacy 全部 200
+- [ ] 首页 + 8 个内容页 + about/contact/privacy 全部 200
 - [ ] `/robots.txt` 里的 Sitemap 是正式域名
-- [ ] `/sitemap.xml` 10 个 URL，全部 https
+- [ ] `/sitemap.xml` 12 个 URL，全部 https
 - [ ] 任意页面源码里 canonical / og:url / og:image 都是正式域名
 - [ ] 404 返回 404 状态
 - [ ] Rich Results Test 抽查首页（DefinedTerm + FAQPage）和票价页（Article + FAQPage）

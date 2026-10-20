@@ -30,6 +30,8 @@ KICKERS = {
     "etymology": "WORD HISTORY",
     "how-to-ride": "FIRST-TIMER'S GUIDE",
     "tickets-and-prices": "FARES · 2026",
+    "line-1": "ROUTE GUIDE",
+    "airport": "AIRPORT TRANSFER",
     "vaporetto-vs-gondola": "COMPARISON",
     "default": "FIELD GUIDE",
 }
@@ -41,6 +43,8 @@ SUBS = {
     "etymology": "From Latin vapor to the 1881 steam launches.",
     "how-to-ride": "Buy, validate, board, and know your stop.",
     "tickets-and-prices": "€9.50 a ride, €25 a day — the maths.",
+    "line-1": "Piazzale Roma to Lido, stop by stop.",
+    "airport": "Boat, bus or water taxi — the real costs.",
     "vaporetto-vs-gondola": "Public transport or private ride?",
     "default": "An independent field guide to the Venetian water bus.",
 }

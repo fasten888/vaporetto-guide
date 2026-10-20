@@ -11,7 +11,7 @@ code=$(curl -s -o /dev/null -w "%{http_code}" "${BASE}/")
 echo "  home            ${code}"
 [ "$code" = "200" ] || exit 1
 
-for path in /tickets-and-prices/ /how-to-ride/ /pronunciation/ /etymology/ /what-is-a-vaporetto/ /vaporetto-vs-gondola/ /about/ /privacy/ /sitemap.xml /robots.txt /assets/style.css; do
+for path in /tickets-and-prices/ /how-to-ride/ /pronunciation/ /etymology/ /what-is-a-vaporetto/ /vaporetto-line-1/ /vaporetto-from-marco-polo-airport/ /vaporetto-vs-gondola/ /about/ /privacy/ /sitemap.xml /robots.txt /assets/style.css; do
   code=$(curl -s -o /dev/null -w "%{http_code}" "${BASE}${path}")
   printf "  %-15s %s\n" "${path#/}" "${code}"
   [ "$code" = "200" ] || exit 1
@@ -21,7 +21,7 @@ canonical=$(curl -s "${BASE}/" | grep -o 'rel="canonical" href="[^"]*"' | head -
 echo "  ${canonical}"
 urls=$(curl -s "${BASE}/sitemap.xml" | grep -c "<loc>")
 echo "  sitemap urls    ${urls}"
-[ "$urls" -ge 10 ] || exit 1
+[ "$urls" -ge 12 ] || exit 1
 
 code=$(curl -s -o /dev/null -w "%{http_code}" "${BASE}/this-page-does-not-exist/")
 echo "  404 page        ${code}"

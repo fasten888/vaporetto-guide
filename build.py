@@ -67,6 +67,20 @@ PAGES: list[dict] = [
         "og": "what-is-a-vaporetto",
     },
     {
+        "slug": "vaporetto-line-1",
+        "crumb": "Line 1",
+        "file": "vaporetto-line-1.html",
+        "nav": None,
+        "title": "Vaporetto Line 1: Stops, Route & How Long It Takes",
+        "desc": (
+            "Line 1 runs from Piazzale Roma to the Lido along the Grand Canal: around 20 stops, "
+            "about 60 minutes, every 10\u201312 minutes. Fares and practical tips."
+        ),
+        "kind": "article",
+        "priority": "0.9",
+        "og": "line-1",
+    },
+    {
         "slug": "pronunciation",
         "crumb": "Pronunciation",
         "file": "pronunciation.html",
@@ -121,6 +135,20 @@ PAGES: list[dict] = [
         "kind": "article",
         "priority": "0.9",
         "og": "tickets-and-prices",
+    },
+    {
+        "slug": "vaporetto-from-marco-polo-airport",
+        "crumb": "Marco Polo Airport",
+        "file": "vaporetto-from-marco-polo-airport.html",
+        "nav": None,
+        "title": "Vaporetto from Marco Polo Airport: Boat, Bus or Taxi?",
+        "desc": (
+            "No ACTV vaporetto at Marco Polo. Compare Alilaguna (~\u20ac15), bus + water bus "
+            "(~\u20ac19.50) and water taxi (\u20ac110+) for the transfer into Venice."
+        ),
+        "kind": "article",
+        "priority": "0.9",
+        "og": "airport",
     },
     {
         "slug": "vaporetto-vs-gondola",
