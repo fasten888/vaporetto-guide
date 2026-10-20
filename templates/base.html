@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta name="robots" content="{{ROBOTS}}">
+<link rel="canonical" href="{{CANONICAL}}">
+<meta name="theme-color" content="#0d4a45">
+<meta name="author" content="Vaporetto Guide">
+
+<meta property="og:site_name" content="{{SITE_NAME}}">
+<meta property="og:type" content="{{OG_TYPE}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{DESC}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+
+<link rel="icon" href="{{BASE}}/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{BASE}}/assets/icon-192.png">
+<link rel="stylesheet" href="{{BASE}}/assets/style.css">
+<script src="{{BASE}}/assets/app.js" defer></script>
+{{JSONLD}}
+<noscript><style>.nav{display:flex}@media(max-width:920px){.nav{position:static;flex-direction:column;box-shadow:none}.nav-toggle{display:none}}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="{{BASE}}/" aria-label="Vaporetto Guide, home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <rect width="48" height="48" rx="11" fill="currentColor"/>
+        <path d="M9 31h30l-3.6 6.2a2 2 0 0 1-1.7 1H14.3a2 2 0 0 1-1.7-1L9 31Z" fill="#f6f1e6"/>
+        <path d="M14 22h20v8H14z" fill="#f6f1e6"/>
+        <path d="M17 24h5v4h-5zm9 0h5v4h-5z" fill="#0d4a45"/>
+        <path d="M23 13h4v8h-4z" fill="#f6f1e6"/>
+        <path d="M27.5 13h3.2l2 5.4h-5.2z" fill="#c4552d"/>
+        <path d="M6 38.5c3 2.4 6 2.4 9 0s6-2.4 9 0 6 2.4 9 0 6-2.4 9 0" fill="none" stroke="#e0a33e" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-word">Vaporetto<span>Guide</span></span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-text">Menu</span>
+    </button>
+
+    <nav class="nav" id="site-nav" aria-label="Guide sections">
+        {{NAV}}
+    </nav>
+
+    <a class="fare-pill" href="{{BASE}}/tickets-and-prices/">
+      <span class="fare-pill-dot" aria-hidden="true"></span>
+      Fares 2026
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    {{CRUMBS}}
+  </div>
+  {{BODY}}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand brand-foot" href="{{BASE}}/">
+        <span class="brand-word">Vaporetto<span>Guide</span></span>
+      </a>
+      <p>An independent field guide to the Venetian water bus: the word, the boats, and the
+      practical details that decide whether your day in the lagoon runs smoothly.</p>
+      <p class="foot-small">Not affiliated with ACTV, Venezia Unica or the Comune di Venezia.</p>
+    </div>
+
+    <div class="foot-col">
+      <h2 class="foot-title">The word</h2>
+      <a href="{{BASE}}/">Vaporetto meaning</a>
+      <a href="{{BASE}}/pronunciation/">Pronunciation</a>
+      <a href="{{BASE}}/etymology/">Etymology</a>
+      <a href="{{BASE}}/what-is-a-vaporetto/">What is a vaporetto?</a>
+    </div>
+
+    <div class="foot-col">
+      <h2 class="foot-title">Plan a trip</h2>
+      <a href="{{BASE}}/how-to-ride/">How to ride</a>
+      <a href="{{BASE}}/tickets-and-prices/">Tickets &amp; prices</a>
+      <a href="{{BASE}}/vaporetto-vs-gondola/">Vaporetto vs gondola</a>
+    </div>
+
+    <div class="foot-col">
+      <h2 class="foot-title">Site</h2>
+      <a href="{{BASE}}/about/">About</a>
+      <a href="{{BASE}}/contact/">Contact</a>
+      <a href="{{BASE}}/privacy/">Privacy</a>
+      <a href="{{CONTACT_URL}}" rel="noopener">Report an error</a>
+    </div>
+  </div>
+
+  <div class="wrap foot-base">
+    <p>&copy; {{YEAR}} {{SITE_NAME}}. Fares and routes checked {{FARES_CHECKED}} against published ACTV
+    and Venezia Unica information. Confirm before you travel.</p>
+    <p class="foot-updated">Last updated <time datetime="{{UPDATED_ISO}}">{{UPDATED_HUMAN}}</time></p>
+  </div>
+</footer>
+
+</body>
+</html>

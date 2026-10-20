@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">A vaporetto crossing the Venetian lagoon below the campanile of San Marco</title>
+  <desc id="heroDesc">Editorial illustration of a cream and ochre Venice water bus, seen in profile, with the city skyline and mooring poles behind it.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4e8d2"/>
+      <stop offset=".62" stop-color="#efdfc4"/>
+      <stop offset="1" stop-color="#e9d6b7"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c7d70"/>
+      <stop offset=".28" stop-color="#0f544c"/>
+      <stop offset="1" stop-color="#073b37"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7ec"/>
+      <stop offset=".72" stop-color="#f2ead9"/>
+      <stop offset="1" stop-color="#e3d7c2"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b4b46"/>
+      <stop offset="1" stop-color="#132e2b"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0c07a" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#f0c07a" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="ripple" width="46" height="22" patternUnits="userSpaceOnUse">
+      <path d="M0 11c8-4 15-4 23 0s15 4 23 0" fill="none" stroke="#9fc9bb" stroke-opacity=".18" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1000" height="760" fill="url(#sky)"/>
+  <circle cx="792" cy="146" r="150" fill="url(#sunGlow)"/>
+  <circle cx="792" cy="146" r="62" fill="#e8b46a"/>
+  <circle cx="792" cy="146" r="76" fill="none" stroke="#e8b46a" stroke-opacity=".35"/>
+
+  <g fill="#f8f0e1" opacity=".8">
+    <ellipse cx="214" cy="126" rx="88" ry="9"/>
+    <ellipse cx="268" cy="108" rx="52" ry="6"/>
+    <ellipse cx="640" cy="88" rx="64" ry="6"/>
+    <ellipse cx="878" cy="250" rx="72" ry="7"/>
+  </g>
+
+  <!-- birds -->
+  <g fill="none" stroke="#5c6762" stroke-width="2" stroke-linecap="round" opacity=".55">
+    <path d="M590 188c7-7 12-7 19 0 7-7 12-7 19 0"/>
+    <path d="M648 156c5-5 9-5 14 0 5-5 9-5 14 0"/>
+    <path d="M540 150c4-4 7-4 11 0 4-4 7-4 11 0"/>
+  </g>
+
+  <!-- distant skyline -->
+  <g opacity=".55">
+    <rect x="40" y="352" width="920" height="60" fill="#c3ae90"/>
+    <rect x="60" y="330" width="70" height="26" fill="#cbb79a"/>
+    <rect x="380" y="338" width="120" height="22" fill="#c9b596"/>
+    <rect x="520" y="330" width="150" height="30" fill="#cbb79a"/>
+    <rect x="700" y="342" width="120" height="18" fill="#c9b596"/>
+  </g>
+
+  <!-- campanile -->
+  <g>
+    <rect x="120" y="196" width="54" height="204" fill="#bfa17d"/>
+    <rect x="120" y="196" width="54" height="204" fill="none" stroke="#a98a66" stroke-width="2"/>
+    <rect x="114" y="188" width="66" height="14" fill="#a98a66"/>
+    <path d="M114 188h66l-33-46z" fill="#8f7353"/>
+    <rect x="132" y="214" width="8" height="24" fill="#f1e4cc" opacity=".7"/>
+    <rect x="154" y="214" width="8" height="24" fill="#f1e4cc" opacity=".7"/>
+    <rect x="132" y="300" width="30" height="42" fill="#8f7353" opacity=".55"/>
+    <circle cx="147" cy="176" r="5" fill="#e0a33e"/>
+  </g>
+
+  <!-- basilica domes -->
+  <g fill="#c7ad8b" stroke="#a98a66" stroke-width="2">
+    <rect x="206" y="330" width="148" height="70"/>
+    <path d="M212 330c0-18 14-32 31-32s31 14 31 32z"/>
+    <path d="M272 330c0-20 15-36 34-36s34 16 34 36z"/>
+    <path d="M326 330c0-16 13-29 28-29s28 13 28 29z"/>
+    <path d="M210 330h140" stroke-width="2"/>
+    <g fill="#8f7353" stroke="none" opacity=".55">
+      <rect x="226" y="354" width="10" height="22"/>
+      <rect x="252" y="354" width="10" height="22"/>
+      <rect x="302" y="354" width="10" height="22"/>
+      <rect x="328" y="354" width="10" height="22"/>
+    </g>
+    <path d="M243 288v-22m0 0h-6m6 0h6" fill="none"/>
+    <path d="M306 280v-24m0 0h-6m6 0h6" fill="none"/>
+  </g>
+
+  <!-- palazzi -->
+  <g stroke="#a98a66" stroke-width="1.5">
+    <rect x="384" y="300" width="100" height="100" fill="#d3bd9b"/>
+    <rect x="496" y="312" width="76" height="88" fill="#c9b190"/>
+    <rect x="584" y="292" width="120" height="108" fill="#d8c3a3"/>
+    <rect x="716" y="316" width="92" height="84" fill="#cdb694"/>
+    <rect x="820" y="304" width="120" height="96" fill="#d5bf9d"/>
+  </g>
+  <g fill="#8f7353" opacity=".5">
+    <rect x="398" y="326" width="9" height="20"/><rect x="420" y="326" width="9" height="20"/>
+    <rect x="442" y="326" width="9" height="20"/><rect x="464" y="326" width="9" height="20"/>
+    <rect x="508" y="336" width="8" height="18"/><rect x="530" y="336" width="8" height="18"/>
+    <rect x="552" y="336" width="8" height="18"/>
+    <rect x="598" y="318" width="10" height="22"/><rect x="624" y="318" width="10" height="22"/>
+    <rect x="650" y="318" width="10" height="22"/><rect x="676" y="318" width="10" height="22"/>
+    <rect x="730" y="338" width="9" height="18"/><rect x="754" y="338" width="9" height="18"/>
+    <rect x="778" y="338" width="9" height="18"/>
+    <rect x="838" y="326" width="10" height="20"/><rect x="866" y="326" width="10" height="20"/>
+    <rect x="894" y="326" width="10" height="20"/><rect x="918" y="326" width="10" height="20"/>
+  </g>
+
+  <!-- water -->
+  <rect y="396" width="1000" height="364" fill="url(#water)"/>
+  <rect y="396" width="1000" height="364" fill="url(#ripple)"/>
+  <g stroke="#b9ded1" stroke-opacity=".28" stroke-linecap="round">
+    <path d="M0 430h1000" stroke-width="1"/>
+    <path d="M0 452h1000" stroke-width="1.4"/>
+    <path d="M0 710h1000" stroke-width="1.6"/>
+    <path d="M0 736h1000" stroke-width="1"/>
+  </g>
+  <g fill="#f2e6d0" opacity=".18">
+    <rect x="700" y="410" width="220" height="3"/>
+    <rect x="740" y="420" width="120" height="2"/>
+    <rect x="120" y="416" width="180" height="3"/>
+    <rect x="300" y="426" width="90" height="2"/>
+  </g>
+
+  <!-- mooring poles left -->
+  <g>
+    <g transform="rotate(-5 96 520)">
+      <rect x="88" y="350" width="15" height="230" fill="#efe2c9"/>
+      <rect x="88" y="350" width="15" height="34" fill="#b8472a"/>
+      <rect x="88" y="384" width="15" height="30" fill="#0d4a45"/>
+      <rect x="88" y="414" width="15" height="30" fill="#efe2c9"/>
+      <rect x="88" y="444" width="15" height="30" fill="#b8472a"/>
+    </g>
+    <g transform="rotate(4 132 540)">
+      <rect x="126" y="396" width="13" height="190" fill="#e7d9bf"/>
+      <rect x="126" y="396" width="13" height="26" fill="#0d4a45"/>
+      <rect x="126" y="422" width="13" height="22" fill="#b8472a"/>
+    </g>
+  </g>
+
+  <!-- mooring poles right -->
+  <g>
+    <g transform="rotate(6 926 540)">
+      <rect x="918" y="370" width="14" height="220" fill="#efe2c9"/>
+      <rect x="918" y="370" width="14" height="30" fill="#b8472a"/>
+      <rect x="918" y="430" width="14" height="28" fill="#0d4a45"/>
+      <rect x="918" y="490" width="14" height="28" fill="#b8472a"/>
+    </g>
+    <g transform="rotate(-3 966 560)">
+      <rect x="960" y="414" width="12" height="170" fill="#e7d9bf"/>
+      <rect x="960" y="414" width="12" height="24" fill="#0d4a45"/>
+    </g>
+  </g>
+
+  <!-- vaporetto reflection -->
+  <g opacity=".32" fill="#052f2c">
+    <ellipse cx="520" cy="606" rx="290" ry="20"/>
+  </g>
+  <g opacity=".5" fill="#f2e6d0">
+    <rect x="320" y="596" width="40" height="3"/>
+    <rect x="380" y="602" width="26" height="3"/>
+    <rect x="430" y="596" width="60" height="3"/>
+    <rect x="640" y="600" width="44" height="3"/>
+  </g>
+
+  <!-- vaporetto -->
+  <g>
+    <!-- hull -->
+    <path d="M248 512H742l66 24-8 26c-4 12-15 20-28 20H292c-14 0-25-8-29-21l-15-49Z" fill="url(#hull)" stroke="#0b3834" stroke-width="2"/>
+    <path d="M263 552h530l-5 18c-3 8-10 12-19 12H292c-9 0-16-5-19-13l-10-17Z" fill="#0b3834"/>
+    <path d="M263 544h538" stroke="#e0a33e" stroke-width="7"/>
+    <path d="M250 516h520" stroke="#b8472a" stroke-width="4"/>
+
+    <!-- name board -->
+    <rect x="300" y="520" width="92" height="16" fill="#0d4a45"/>
+    <g fill="#f2e6d0">
+      <rect x="306" y="525" width="4" height="6"/>
+      <rect x="314" y="525" width="3" height="6"/>
+      <rect x="321" y="525" width="4" height="6"/>
+      <rect x="329" y="525" width="3" height="6"/>
+      <rect x="336" y="525" width="4" height="6"/>
+      <rect x="345" y="525" width="3" height="6"/>
+      <rect x="352" y="525" width="4" height="6"/>
+      <rect x="360" y="525" width="3" height="6"/>
+    </g>
+
+    <!-- lower cabin windows -->
+    <g fill="url(#glass)" stroke="#0b3834" stroke-width="1.5">
+      <rect x="404" y="522" width="34" height="14"/>
+      <rect x="446" y="522" width="34" height="14"/>
+      <rect x="488" y="522" width="34" height="14"/>
+      <rect x="530" y="522" width="34" height="14"/>
+    </g>
+
+    <!-- main cabin -->
+    <path d="M330 438h366v74H330z" fill="#f8f3e6" stroke="#0b3834" stroke-width="2"/>
+    <path d="M696 438l44 24v50h-44z" fill="#f8f3e6" stroke="#0b3834" stroke-width="2"/>
+    <path d="M300 438h430l-14-18H314z" fill="#e0d2b8" stroke="#0b3834" stroke-width="2"/>
+    <path d="M330 438h366" stroke="#e0a33e" stroke-width="4"/>
+
+    <!-- windows -->
+    <g fill="url(#glass)" stroke="#0b3834" stroke-width="2">
+      <rect x="342" y="454" width="44" height="40"/>
+      <rect x="394" y="454" width="44" height="40"/>
+      <rect x="446" y="454" width="44" height="40"/>
+      <rect x="498" y="454" width="44" height="40"/>
+      <rect x="550" y="454" width="44" height="40"/>
+      <rect x="602" y="454" width="44" height="40"/>
+      <rect x="654" y="454" width="34" height="40"/>
+      <path d="M702 458l30 16v18h-30z"/>
+    </g>
+    <g fill="#f2e6d0" opacity=".22">
+      <rect x="345" y="457" width="10" height="34"/>
+      <rect x="397" y="457" width="10" height="34"/>
+      <rect x="449" y="457" width="10" height="34"/>
+      <rect x="501" y="457" width="10" height="34"/>
+      <rect x="553" y="457" width="10" height="34"/>
+      <rect x="605" y="457" width="10" height="34"/>
+    </g>
+
+    <!-- passengers silhouettes -->
+    <g fill="#17302e">
+      <circle cx="362" cy="470" r="5"/>
+      <path d="M355 475h14l3 19h-20z"/>
+      <circle cx="414" cy="466" r="5"/>
+      <path d="M407 471h14l3 23h-20z"/>
+      <circle cx="619" cy="470" r="5"/>
+      <path d="M612 475h14l3 19h-20z"/>
+    </g>
+    <g fill="#b8472a">
+      <circle cx="518" cy="466" r="5"/>
+      <path d="M511 471h14l3 23h-20z"/>
+    </g>
+
+    <!-- stern open deck -->
+    <path d="M300 512v-40h30v40z" fill="#e9dcc4" stroke="#0b3834" stroke-width="2"/>
+    <g stroke="#0b3834" stroke-width="2">
+      <path d="M300 476h30"/>
+      <path d="M306 476v36M316 476v36M326 476v36"/>
+    </g>
+
+    <!-- life ring -->
+    <g>
+      <circle cx="706" cy="520" r="11" fill="#f8f3e6" stroke="#b8472a" stroke-width="3"/>
+      <circle cx="706" cy="520" r="4" fill="#0d4a45"/>
+    </g>
+
+    <!-- roof details -->
+    <path d="M338 420h350" stroke="#0b3834" stroke-width="2"/>
+    <rect x="380" y="404" width="52" height="16" fill="#12695f" stroke="#0b3834" stroke-width="1.5"/>
+    <rect x="470" y="404" width="72" height="16" fill="#12695f" stroke="#0b3834" stroke-width="1.5"/>
+    <circle cx="686" cy="430" r="4" fill="#e0a33e"/>
+
+    <!-- bow rail -->
+    <g stroke="#0b3834" stroke-width="2" fill="none">
+      <path d="M736 512l14-16h34l20 16"/>
+      <path d="M750 496v16M766 496v16M782 496v16"/>
+    </g>
+
+    <!-- wake -->
+    <g stroke="#f6f1e6" stroke-linecap="round" fill="none" opacity=".75">
+      <path d="M248 566c-40 8-78 10-118 8" stroke-width="4"/>
+      <path d="M240 582c-54 10-104 12-156 8" stroke-width="3" opacity=".55"/>
+      <path d="M300 596c-30 6-58 6-88 2" stroke-width="3" opacity=".4"/>
+      <path d="M806 556c28 2 52 0 74-6" stroke-width="3" opacity=".5"/>
+    </g>
+  </g>
+
+  <!-- foreground ripples -->
+  <g stroke="#9fc9bb" stroke-opacity=".32" stroke-linecap="round" fill="none">
+    <path d="M40 650c22-6 44-6 66 0s44 6 66 0" stroke-width="2"/>
+    <path d="M600 676c26-7 52-7 78 0s52 7 78 0" stroke-width="2"/>
+    <path d="M200 720c30-8 60-8 90 0s60 8 90 0" stroke-width="2"/>
+    <path d="M760 706c20-5 40-5 60 0s40 5 60 0" stroke-width="2"/>
+  </g>
+  <g fill="#f2e6d0" opacity=".5">
+    <circle cx="470" cy="640" r="2"/>
+    <circle cx="520" cy="664" r="1.6"/>
+    <circle cx="380" cy="690" r="1.6"/>
+    <circle cx="840" cy="648" r="2"/>
+    <circle cx="180" cy="668" r="1.6"/>
+  </g>
+</svg>
