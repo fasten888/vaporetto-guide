@@ -45,11 +45,11 @@ duplicate titles/descriptions and that the sitemap matches the canonicals.
 ## Regenerate social cards and icons
 
 ```bash
-/Users/a24389/.dsh/dsh-runtimes/dsh-primary-runtime/dependencies/python/bin/python3 tools/make_assets.py
+python3 tools/make_assets.py
 ```
 
-Requires Chrome for the cards and Pillow for the icons. The PNGs are committed, so
-CI does not need either.
+Requires Google Chrome for the cards and Pillow for the icons (`pip install pillow`).
+The PNGs are committed, so CI does not need either.
 
 ## Deploy
 

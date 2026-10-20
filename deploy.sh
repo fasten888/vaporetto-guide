@@ -25,9 +25,8 @@ echo "→ Checks"
 python3 tools/check_site.py
 
 echo
-echo "→ Local preview"
-echo "  python3 -m http.server 8899 --directory dist"
-echo "  open http://127.0.0.1:8899${BASE_PATH}/"
+echo "→ Local preview (rebuilds with a root base path)"
+echo "  ./preview.sh"
 echo
 echo "→ Publish"
 echo "  git add -A && git commit -m \"Update site\" && git push"
