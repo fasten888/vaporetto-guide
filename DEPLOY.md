@@ -2,9 +2,10 @@
 
 ## 0. 当前状态
 
-- 正式域名：`vaporettoguide.com`（2026-10-20 已在 Spaceship 购买，含隐私保护）
-- 线上地址：`https://vaporettoguide.com/`（DNS 生效并绑定 Pages 后）
-- 过渡地址：`https://fasten888.github.io/vaporetto-guide/`
+- 正式域名：`vaporettoguide.com`（2026-10-20 在 Spaceship 购买，含隐私保护）
+- 线上地址：`https://vaporettoguide.com/` — **已上线，HTTPS 证书已签发**
+- Pages 自定义域名、`www` → 主域 301、HTTP → HTTPS 均已生效
+- 过渡地址：`https://fasten888.github.io/vaporetto-guide/`（会自动跳转到正式域名）
 - 站点根路径：正式域名下是 `/`，过渡地址下是 `/vaporetto-guide`
 - `vaporettomeaning.com` 已被注册（Cloudflare NS），不要用精确匹配域名
 
@@ -91,8 +92,16 @@ GitHub 会在仓库根写入 `CNAME`，并自动申请证书。再添加 `www`�
 - `build.py` 会在 `dist/CNAME` 写入 `vaporettoguide.com`
 - `deploy.sh` 默认按正式域名构建
 
-DNS 生效后合并到 `main`，Actions 自动发布。构建产物里 canonical、OG、
-sitemap、站内链接都会变成 `https://vaporettoguide.com/...`。
+已合并到 `main` 并由 Actions 发布。构建产物里 canonical、OG、sitemap、
+站内链接全部是 `https://vaporettoguide.com/...`。
+
+更新站点仍然只需要：
+
+```bash
+git add -A && git commit -m "Update content" && git push
+```
+
+Actions 会自动重新构建、检查并发布；不需要再动 DNS。
 
 > 旧地址 `fasten888.github.io/vaporetto-guide/` 会失效。因为站点是新站、还没被
 > 收录，直接切换即可；如果已经有外链，可在旧仓库首页放一个提示页，或在

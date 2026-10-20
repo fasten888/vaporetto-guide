@@ -3,7 +3,7 @@
 #   ./verify-live.sh https://fasten888.github.io/vaporetto-guide
 
 set -euo pipefail
-BASE="${1:-https://fasten888.github.io/vaporetto-guide}"
+BASE="${1:-https://vaporettoguide.com}"
 BASE="${BASE%/}"
 
 echo "→ ${BASE}/"
